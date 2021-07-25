@@ -1,0 +1,134 @@
+/* body {
+  background-color: lightslategray;
+} */
+
+div.App {
+  margin: 20px auto;
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+div.App > div.app-card {
+  background-color: black;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+div.App > div.app-card > div.card-left {
+  box-sizing: border-box;
+  border-radius: 20px 0 0 20px;
+  padding-left: 50px;
+  padding-top: 40px;
+  width: 70%;
+  height: 100%;
+}
+
+div.App > div.app-card > img {
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+}
+
+/*Input Styling*/
+div.App > div.app-card > div.card-left > input,
+label {
+  color: white;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 10px 0;
+}
+
+div.App > div.app-card > div.card-left > input {
+  color: white;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 300px;
+}
+
+div.App > div.app-card > div.card-left > button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  margin: 10px auto;
+}
+
+div.output > img {
+  width: 40%;
+}
+
+/*footer*/
+div.App > footer {
+  width: 40%;
+  min-width: 300px;
+  height: 10%;
+  border-radius: 20px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  div.App {
+    margin: 20px auto;
+    width: 80%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  div.App > div.app-card {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.App > div.app-card > img {
+    height: 100%;
+  }
+
+  div.App > div.app-card > div.card-left {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  div.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  /* div.output > img {
+    width: 100px;
+  } */
+
+  img.stock-image {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  div.App > footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
