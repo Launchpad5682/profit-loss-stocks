@@ -95,14 +95,18 @@ function App() {
                   {shareProfit[1]}{" "}
                 </p>
               )}
-              {profit ? <img src={happyGif} /> : <img src={sadGif} />}
+              {profit ? (
+                <img src={happyGif} alt="happyGIF" />
+              ) : (
+                <img src={sadGif} alt="sadGIF" />
+              )}
             </div>
           ) : null}
         </div>
         {bullImg ? (
-          <img src={bull} alt="bull-image" className="stock-image" />
+          <img src={bull} alt="bull-img" className="stock" />
         ) : (
-          <img src={penny} alt="penny-image" className="stock-image" />
+          <img src={penny} alt="penny-img" className="stock" />
         )}
       </div>
       <footer>
@@ -112,7 +116,7 @@ function App() {
         <a href="https://twitter.com/saurabh22suthar">
           <img src={twitter} alt="twitter" />
         </a>
-        <a href={null}>
+        <a href="https://github.com/Launchpad5682">
           <img src={portfolio} alt="portfolio" />
         </a>
       </footer>
